@@ -346,11 +346,7 @@ game.play_step(action)
 We then calculate the target Q-value:
 
 $$
-Q_{target}
-=
-R
-+
-\gamma \max Q(s',a')
+Q_{target}=R+\gamma \max Q(s',a')
 $$
 
 and train the network so that its prediction moves toward this target.
