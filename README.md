@@ -290,18 +290,7 @@ The core of Q-Learning is the **Bellman equation**.
 The Q-value can be updated using:
 
 $$
-Q_{new}(s,a)
-=
-Q(s,a)
-+
-\alpha
-\left[
-R(s,a)
-+
-\gamma \max_{a'}Q(s',a')
--
-Q(s,a)
-\right]
+Q_{new}(s,a)=Q(s,a)+\alpha\left[R(s,a)+\gamma \max_{a'}Q(s',a')-Q(s,a)\right]
 $$
 
 Where:
